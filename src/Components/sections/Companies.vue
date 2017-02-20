@@ -1,5 +1,5 @@
 <template>
-    <section class="section-companies">
+    <section class="section-companies" id="companies">
         <div class="row">
             <h2>Companies we work with</h2>
         </div>

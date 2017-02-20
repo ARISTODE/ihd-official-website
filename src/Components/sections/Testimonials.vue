@@ -38,6 +38,7 @@ export default {
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
+    height: 80vh;
 }
 
 blockquote {

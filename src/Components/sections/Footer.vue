@@ -2,7 +2,7 @@
     <footer>
         <div class="row">
             <p>
-                Copyright &copy; 2015 by Omnifood. All rights reserved.
+                Copyright &copy; 2015 by IHD. All rights reserved.
             </p>
         </div>
     </footer>

@@ -1,26 +1,12 @@
 <template>
     <div id="app">
-        <app-header></app-header>
-        <app-features></app-features>
-        <app-projects></app-projects>
-        <app-video></app-video>
-        <app-testimonials></app-testimonials>
-        <app-skills></app-skills>
-        <app-companies></app-companies>
-        <app-footer></app-footer>
+        <transition name="slide" mode="out-in">
+            <router-view></router-view>
+        </transition>
     </div>
 </template>
 
 <script>
-import Header from './sections/Header.vue';
-import Features from './sections/Features.vue';
-import Projects from './sections/Projects.vue';
-import Testimonials from './sections/Testimonials.vue';
-import Video from './sections/Video.vue';
-import Skills from './sections/Skills.vue';
-import Companies from './sections/Companies.vue';
-import Footer from './sections/Footer.vue';
-
 export default {
     name: 'app',
     data () {
@@ -29,14 +15,7 @@ export default {
         }
     },
     components: {
-        'appHeader': Header,
-        'appFeatures': Features,
-        'appProjects': Projects,
-        'appVideo': Video,
-        'appTestimonials': Testimonials,
-        'appSkills': Skills,
-        'appCompanies': Companies,
-        'appFooter': Footer
+
     }
 }
 </script>
@@ -238,4 +217,41 @@ input[type=submit]:active {
     border: 1px solid #2980b9;
     color: #fff;
 }
+
+/*vue sliding effect*/
+
+.slide-enter-active {
+    animation: slide-in 200ms ease-out forwards;
+}
+
+.slide-leave-active {
+    animation: slide-out 200ms ease-out forwards;
+}
+
+@keyframes slide-in {
+    0%
+    {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-out {
+    0%
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%
+    {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+}
+
 </style>

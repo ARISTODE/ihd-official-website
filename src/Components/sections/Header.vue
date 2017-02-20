@@ -5,7 +5,9 @@
                 <img src="../assets/resources/img/ihd-logo-white.png" alt="ihd logo" class="logo">
                 <ul class="main-nav">
                     <li><a href="#features">Projects</a></li>
-                    <li><a href="#works">How it works</a></li>
+                    <li><a href="#video">About us</a></li>
+                    <li><a href="#companies">Cooperation</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
                     <li><a href="#plans">Sign up</a></li>
                 </ul>
                 <a class="mobile-nav-icon"><i class="ion-navicon-round"></i></a>
@@ -15,7 +17,9 @@
             <h1>Global team<br>Provide professional plans</h1>
             <a class="btn btn-full" href="#">JOIN US!</a>
             <a class="btn btn-ghost" href="#">Show me more</a>
-        </div> </header> </template>
+        </div>
+    </header>
+</template>
 
 <script>
 export default {
