@@ -1,5 +1,10 @@
 <template>
     <section class="section-companies" id="companies">
+        <!-- waypoint handler functions -->
+        <v-waypoint
+            @waypoint-in="$store.dispatch('updateSticky')"
+            @waypoint-out="$store.dispatch('updateSticky')"
+        ></v-waypoint>
         <div class="row">
             <h2>Companies we work with</h2>
         </div>

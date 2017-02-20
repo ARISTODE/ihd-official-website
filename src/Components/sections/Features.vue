@@ -6,7 +6,6 @@
                 International Horizon Developer 项目（简称IHD）源自 DezCorporation 《香港国际精英实训交流》课程，以其创新实用的形式，专业而灵活的课程设置， 以及强大的企业联合、行业资源，带给参与者巨大的职场能力提升。 截至目前，已有清华大学、浙江大学、武汉大学、中山大学、UIC 等高校学子选择 IHD 项目。
             </p>
         </div>
-
         <div class="row">
             <div class="col span-1-of-4 box">
                 <i class="ion-ios-lightbulb-outline icon-big"></i>
@@ -37,11 +36,17 @@
                 </p>
             </div>
         </div>
+        <!-- waypoint handler functions -->
+        <v-waypoint
+        @waypoint-in="$store.dispatch('updateSticky')"
+        @waypoint-out="$store.dispatch('updateSticky')"
+        ></v-waypoint>
     </section>
 </template>
 
 <script>
 export default {
+
 }
 </script>
 

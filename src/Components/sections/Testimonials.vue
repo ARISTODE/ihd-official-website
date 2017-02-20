@@ -1,8 +1,15 @@
 <template>
     <section class="section-testimonials">
+        <!-- waypoint handler functions -->
+        <v-waypoint
+            @waypoint-in="$store.dispatch('updateSticky')"
+            @waypoint-out="$store.dispatch('updateSticky')"
+        ></v-waypoint>
+
         <div class="row">
             <h2>Our reputations</h2>
         </div>
+
         <div class="row">
             <div class="col span-1-of-3">
                 <blockquote>

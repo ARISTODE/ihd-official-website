@@ -101,6 +101,27 @@ export default {
     display: table;
     clear: both;
 }
+
+.cd-timeline-block:nth-child(even) .cd-timeline-content h2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 30%;
+    border-top: 2px solid lightgray;
+}
+
+.cd-timeline-block:nth-child(odd) .cd-timeline-content h2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 30%;
+    border-top: 2px solid lightgray;
+}
+
 .cd-timeline-content h2 {
     color: #303e49;
 }
@@ -140,6 +161,7 @@ export default {
     border: 7px solid transparent;
     border-right: 7px solid white;
 }
+
 @media only screen and (min-width: 768px) {
     .cd-timeline-content h2 {
         font-size: 20px;
@@ -187,6 +209,7 @@ export default {
         border-color: transparent;
         border-right-color: white;
     }
+
     .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
         float: right;
     }
@@ -232,9 +255,10 @@ export default {
     background-color: #2980b9;
     color: white;
     height: 100%;
-    width: 15%;
+    width: 25%;
     text-align: center;
     font-size: 120%;
+    font-weight: 400;
     line-height: 35px;
 }
 

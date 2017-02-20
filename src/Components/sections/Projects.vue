@@ -44,6 +44,11 @@
                 </figure>
             </li>
         </ul>
+        <!-- waypoint handler functions -->
+        <v-waypoint
+            @waypoint-in="$store.dispatch('updateSticky')"
+            @waypoint-out="$store.dispatch('updateSticky')"
+        ></v-waypoint>
     </section>
 </template>
 

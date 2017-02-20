@@ -5,9 +5,9 @@
         <app-projects></app-projects>
         <app-video></app-video>
         <app-testimonials></app-testimonials>
-        <app-schedule></app-schedule>
         <app-skills></app-skills>
         <app-companies></app-companies>
+        <app-schedule></app-schedule>
         <app-footer></app-footer>
     </div>
 </template>

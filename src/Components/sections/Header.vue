@@ -1,13 +1,14 @@
 <template>
-    <header>
-        <nav>
+    <header id="head">
+        <nav :class="{sticky: this.$store.getters.sticky}">
             <div class="row">
-                <img src="../assets/resources/img/ihd-logo-white.png" alt="ihd logo" class="logo">
+                <a href="#head"><img src="../assets/resources/img/ihd-logo-white.png" alt="ihd logo" class="logo"></a>
+                <a href="#head"><img src="../assets/resources/img/ihd-logo.png" alt="ihd logo" class="logo-black"></a>
                 <ul class="main-nav">
-                    <li><a href="#features">Projects</a></li>
-                    <li><a href="#video">About us</a></li>
-                    <li><a href="#companies">Cooperation</a></li>
-                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#features" v-smooth-scroll="{duration: 800}">Projects</a></li>
+                    <li><a href="#video" v-smooth-scroll="{duration: 800}">About us</a></li>
+                    <li><a href="#companies" v-smooth-scroll="{duration: 800}">Cooperation</a></li>
+                    <li><a href="#cd-timeline" v-smooth-scroll="{duration: 800}">Schedule</a></li>
                     <li><a href="#plans">Sign up</a></li>
                 </ul>
                 <a class="mobile-nav-icon"><i class="ion-navicon-round"></i></a>

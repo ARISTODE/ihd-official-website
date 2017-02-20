@@ -19,6 +19,6 @@ export default {
 
 <style lang="css">
 .section-video {
-    height: 100vh;
+    height: 80vh;
 }
 </style>
